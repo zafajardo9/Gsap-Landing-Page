@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&family=Roboto:wght@300&display=swap');
+// font-family: 'Playfair Display', serif;
+// font-family: 'Roboto', sans-serif;
+
+:root {
+    --main--color: #fcdab7;
+    --secondary: #1e5f74;
+    --third: #133b5c;
+    --dark: #1d2d50;
+}
+* {
+    margin: 0;
+    padding: 0;
+    body {
+        background-color:var(--main--color);
+        font-family: 'Roboto', sans-serif;
+        nav {
+            width: 100%;
+            background-color: var(--third);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .logo {
+                font-family: 'Lobster', cursive;
+                color: var(--main--color);
+                font-size: 2rem;
+                margin:10px;
+            }
+            ul {
+                display: flex;
+                li {
+                    list-style: none;
+                    margin: 10px;
+                    a {
+                        text-decoration: none;
+                        color: var(--main--color);
+                        padding: 10px;
+                        background-color: var(--dark);
+                        border-radius: 10px;
+                        &:hover {
+                            background-color: var(--secondary);
+                            transition: 1s ease-out;
+                        }
+                    }
+                }
+            }
+        }
+        .header {
+            width: 100%;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .header-logo {
+                font-family: 'Lobster', cursive;
+                color: var(--third);
+                font-size: 4rem;
+            }
+
+        }
+
+        .entrance {
+            background-color: var(--dark);
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .hide {
+                font-family: 'Playfair Display', serif;
+                color: var(--main--color);
+                font-size: 3rem;
+            }
+        }
+        .slider {
+            width: 100%;
+            height: 100%;
+            background-color: var(--main--color);
+            position: fixed;
+            top: 0;
+            left: 0;
+            transform: translateY(100%);
+        }
+    }
+}
+
